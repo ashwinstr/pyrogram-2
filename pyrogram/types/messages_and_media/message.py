@@ -447,6 +447,7 @@ class Message(Object, Update):
         self.video_chat_members_invited = video_chat_members_invited
         self.web_app_data = web_app_data
         self.reactions = reactions
+        self._client = client
 
     @staticmethod
     async def _parse(
